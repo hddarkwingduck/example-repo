@@ -1,9 +1,11 @@
-# example-repo
-Practical task 3 - M03T09 Version control and Git basics
+# example-repo  
+Practical Task 3 - M03T09 Version Control and Git Basics
 
-# Shell Script: Conditional Folder Creation
+## Shell Script: Conditional Folder Creation
 
-This repository contains a shell script that demonstrates conditional folder creation based on the existence of specific directories. The script is designed for educational purposes as part of the **M03T08 - Shell scripting** task.
+This repository contains a shell script that demonstrates conditional folder creation based on the existence of specific directories. The script is designed for educational purposes as part of the **M03T08 - Shell Scripting** task.
+
+---
 
 ## Table of Contents
 
@@ -15,9 +17,13 @@ This repository contains a shell script that demonstrates conditional folder cre
 - [License](#license)
 - [Author](#author)
 
+---
+
 ## About
 
 This project provides a Bash script that checks for the existence of certain folders and creates new ones based on those conditions. It is intended to help students understand basic shell scripting logic and error handling.
+
+---
 
 ## Features
 
@@ -27,40 +33,40 @@ This project provides a Bash script that checks for the existence of certain fol
 - Provides clear output messages for each scenario.
 - Includes robust error handling for interruptions and failed commands.
 
+---
+
 ## Usage
 
 1. **Clone the repository:**
 
+    ```bash
+    git clone https://github.com/hddarkwingduck/git-task.git
+    cd git-task
+    ```
+
 2. **Make the script executable:**
 
+    ```bash
+    chmod +x ifExample.sh
+    ```
+
 3. **Run the script:**
+
+    ```bash
+    ./ifExample.sh
+    ```
+
+---
 
 ## Expected Output
 
 Depending on the folder structure in your directory, you will see output similar to the following:
 
-- **Scenario 1: `new_folder` exists**
+### Scenario 1: `new_folder` exists
 
-- **Scenario 2: `if_folder` does not exist**
-
-## Error Handling
-
-- The script uses `set -e` to exit immediately if a command fails.
-- Handles interruptions gracefully with a custom message.
-
-## License
-
-This project is licensed for educational use.
-
-## Author
-
-- **Deon Botha**
-- Student Number: DB25020017469
-
----
-
-> **Note:**  
-> This script was developed as part of a shell scripting task for educational purposes.  
-> For any issues or suggestions, please open an issue in this repository.
-
-
+```text
+Proceeding to create 'if_folder'.
+'if_folder' created successfully because 'new_folder' exists.
+'if_folder' exists. Proceeding to create 'hyperionDev'.
+'hyperionDev' created successfully because 'if_folder' exists.
+Script completed successfully.
