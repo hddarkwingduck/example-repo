@@ -70,3 +70,34 @@ Proceeding to create 'if_folder'.
 'if_folder' exists. Proceeding to create 'hyperionDev'.
 'hyperionDev' created successfully because 'if_folder' exists.
 Script completed successfully.
+```
+### Scenario 2: `if_folder` does not exist
+
+```text
+Skipping creation of 'if_folder'.
+'if_folder' does not exist. Proceeding to create 'new-projects'.
+'new-projects' created successfully because 'if_folder' does not exist.
+Script completed successfully.
+```
+
+## Error handling
+
+The script uses set -e to exit immediately if a command fails.
+
+Handles interruptions gracefully with a custom message.
+
+## License
+
+This project is licensed for educational use.
+
+## Author
+
+Deon Botha
+
+Student Number: DB25020017469
+
+> **Note:**  
+> This script was developed as part of a shell scripting task for educational purposes.  
+> For any issues or suggestions, please open an issue in this repository.
+
+
